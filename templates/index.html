@@ -457,23 +457,30 @@ https://templatemo.com/tm-578-first-portfolio
                                     </p>
                                 </div>
                             </div>
-                                    <div class="col-lg-3 col-md-6 col-6">
+                                   <div class="col-lg-3 col-md-6 col-12 ps-lg-4">
+                                    <div class="contact-form">
                                         <h3>Contact Me</h3>
                                         <!-- Contact Form -->
                                         <form method="post" action="">
                                             {% csrf_token %}
-                                            <label for="id_name">Name:</label>
-                                            <input type="text" name="name" id="id_name" required>
-                                            <br>
-                                            <label for="id_email">Email:</label>
-                                            <input type="email" name="email" id="id_email" required>
-                                            <br>
-                                            <label for="id_message">Project Description</label>
-                                            <textarea name="project_description" id="id_message" required></textarea>
-                                            <br>
-                                            <button type="submit">Send</button>
+                                            <div class="mb-3">
+                                                <label for="id_name" class="form-label">Name:</label>
+                                                <input type="text" name="name" id="id_name" class="form-control" required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="id_email" class="form-label">Email:</label>
+                                                <input type="email" name="email" id="id_email" class="form-control" required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="id_message" class="form-label">Project Description:</label>
+                                                <textarea name="project_description" id="id_message" class="form-control" required></textarea>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Send</button>
                                         </form>
                                     </div>
+                                </div>
+
+
                 </div>
                 </section>
 
